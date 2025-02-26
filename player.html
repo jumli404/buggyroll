@@ -639,7 +639,7 @@
                         data.series[index]
 
                         small_episods.innerHTML += `
-                        <button id="a" style="background-color:#4d5059; color:white; margin-top:6px;">${u + 1}</button>
+                        <button id="${u}" style="background-color:#4d5059; color:white; margin-top:6px;">${u + 1}</button>
                         
                         `
                         epi.innerHTML += `
@@ -652,6 +652,14 @@
 
                     }
                     player_url = data.series[index].episodes[0].url
+
+                    small_episods.addEventListener("click", (a) => {
+                        player_url = data.series[index].episodes[a.target.id].url
+                        //     console.log(data.series[index].episodes[a.target.id].url)
+                        //   console.log(a.target.id)
+
+
+                    })
                     epi.addEventListener("click", (a) => {
                         player_url = data.series[index].episodes[a.target.id].url
                         //     console.log(data.series[index].episodes[a.target.id].url)
@@ -671,6 +679,10 @@
                     
                     `
                     player_url = data.series[index].url
+
+                    small_episods.addEventListener("click", (a) => {
+                        console.log(data.series[index].url)
+                    })
                     epi.addEventListener("click", (a) => {
                         console.log(data.series[index].url)
                     })
@@ -709,7 +721,7 @@
                 setInterval(() => {
                     if (video.src != player_url) {
                         console.log(`playing ${data.series[index].title} with a url of ${player_url}`)
-                        video.src=player_url
+                        video.src = player_url
 
                     }
 
