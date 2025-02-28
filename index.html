@@ -9,12 +9,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiAnime</title>
+    <link rel="shortcut icon" href="/src/anime-dens.gif" type="image/x-icon">
 </head>
 
 <body>
+
     <div class="container">
         <nav>
-            <button id="menu"></button>
+            <button id="menu" onclick="move()"></button>
+            <div class="icon_g">
+                <img src="/src/anime-dens.gif" alt="" height="100%" width="100%" a>
+            </div>
+            <div class="men" id="JDlegendary">
+                <button class="m" id="close" onclick="move2()">Close Menu</button>
+                <button class="m" id="Explore">Explore</button>
+                <button class="m" id="Home">Home</button>
+                <button class="m" id="Contact">Contact</button>
+
+
+            </div>
+
         </nav>
         <div class="move" style="display: none;">
             <!-- Got a error so i removed it it's not like it   was of use gona fix it in near future  -->
@@ -35,10 +49,95 @@
         </div>
     </div>
 
-    <style>
+    <style id="lmao">
         body {
             background-color: #11101a;
 
+        }
+
+
+        .men {
+            position: relative;
+
+            margin-top: -56px;
+            left: -300px;
+
+            width: 300px;
+            height: 100vh;
+            background-color: #201f31d5;
+            backdrop-filter: blur(3px);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+
+        .men button {
+            border: none;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: large;
+            height: 50px;
+            background-color: transparent;
+        }
+
+        .men button:first-child {
+            margin-top: 50px;
+            background-image: url(src/back.png);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 80px;
+        }
+
+        .men button:hover {
+            background-color: #444444;
+            cursor: pointer;
+        }
+
+        #Explore {
+            margin-top: 150px;
+        }
+
+        @keyframes close {
+            0% {
+                position: relative;
+                left: 0;
+
+            }
+
+            100% {
+                position: relative;
+                left: -300px;
+
+            }
+
+        }
+
+        @keyframes open {
+            0% {
+                position: relative;
+                left: -300px;
+            }
+
+            100% {
+                position: relative;
+                left: 0px;
+
+            }
+
+        }
+
+
+        .icon_g {
+            margin-top: -50px;
+            border: 1px solid red transparent;
+            margin-left: 100px;
+            width: 75px;
+
+
+            height: 60px;
         }
 
         .content {
@@ -49,6 +148,7 @@
             justify-content: center;
             flex-wrap: wrap;
             background-color: #11101a;
+
             gap: 20px;
             padding-top: 10px;
 
@@ -94,7 +194,7 @@
             border: none;
             margin-top: 14px;
             margin-left: 14px;
-            background-image: url(menu.png);
+            background-image: url(src/menu.png);
             height: 35px;
             width: 35px;
             background-color: transparent;
@@ -115,7 +215,7 @@
 
             height: 60px;
             z-index: 10;
-            background-color: transparent;
+            background-color: #201f31c7;
         }
 
         .container {
@@ -129,6 +229,7 @@
         .slide {
 
 
+
             overflow: hidden;
             width: 99vw;
 
@@ -136,6 +237,7 @@
         }
 
         .slider {
+
 
 
 
@@ -161,7 +263,8 @@
             display: flex;
             justify-content: space-between;
             height: 550px;
-            background-color: #201f31;
+
+            background-color: #2d2b442f;
 
 
 
@@ -407,6 +510,10 @@
 
 
         @media(width <=400px) {
+            .men {
+                width: 200px;
+            }
+
             .content {
                 gap: 10px;
             }
@@ -420,6 +527,9 @@
                 left: 80%;
                 height: 230px;
                 z-index: 5;
+            }
+            .men button:first-child{
+                background-position: 35px;
             }
 
             .cover_text h1 {
@@ -461,6 +571,19 @@
     </style>
 </body>
 <script>
+    let menu = document.getElementsByClassName('men')[0]
+    function move() {
+        menu.style.animation = 'open forwards 2s ease'
+
+
+    }
+    function move2(params) {
+        menu.style.animation = 'close forwards 2s ease'
+
+    }
+
+
+
     let nav = document.getElementsByTagName("nav")[0]
     let content = document.getElementsByClassName('content')[0]
     let aa = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "z", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
