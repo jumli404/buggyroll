@@ -1,15 +1,17 @@
 
-
+let nav = document.getElementsByTagName("nav")[0]
 window.onload = () => {
     let blur = document.getElementsByClassName('blur')[0]
+    
     blur.style.display = 'none'
+   nav.style.display = 'block'
 
 
 
 
 }
 
-let nav = document.getElementsByTagName("nav")[0]
+
 document.addEventListener("scroll", (a) => {
     if (scrollY > 1) {
         nav.style.backgroundColor = "#201f31b2"
