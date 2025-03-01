@@ -1,9 +1,27 @@
-let blur = document.getElementsByClassName('blur')[0]
+
 
 window.onload = () => {
+    let blur = document.getElementsByClassName('blur')[0]
     blur.style.display = 'none'
-    //     alert('loaded')
+
+
+
+
 }
+
+let nav = document.getElementsByTagName("nav")[0]
+document.addEventListener("scroll", (a) => {
+    if (scrollY > 1) {
+        nav.style.backgroundColor = "#201f31b2"
+
+    }
+    else {
+        nav.style.backgroundColor = "#201f31"
+    }
+
+
+
+})
 let menu = document.getElementsByClassName('men')[0]
 function move() {
     menu.style.animation = 'open forwards 2s ease'
@@ -29,21 +47,21 @@ let h = []
 let video = document.getElementsByTagName("iframe")[0]
 let time;
 let index = sessionStorage.getItem("video_index")
-console.log('index: ' + index)
+
 let info = document.getElementsByClassName('info')[0]
 let small_info = document.getElementsByClassName('small_info')[0]
 let content_vi = document.getElementsByClassName('content_vi')[0]
 let epi = document.getElementsByClassName("episods")[0]
 let small_episods = document.getElementsByClassName("small_episods")[0]
 
-// let a = sessionStorage.getItem("video_index")
+
 fetch('./data.json')
     .then(a => a.json())
     .then(data => {
         function hash(e) {
 
             time++
-            console.log(time)
+            //  console.log(time)
             if (time > 100) {
                 alert('ERROR HASH() function crash ')
                 return
@@ -66,18 +84,18 @@ fetch('./data.json')
                 if (ha.length >= 1) {
                     if (ha.indexOf(final) === -1) {
                         ha.push(final)
-                        // console.log('a')
+
 
                     }
                     else {
 
-                        console.log("womp womp")
+
                         hash()
                     }
 
                 }
                 if (ha.length === 0) {
-                    console.log('id')
+
                     ha.push(final)
 
                 }
@@ -101,7 +119,6 @@ fetch('./data.json')
             j++
 
 
-            console.log(data)
 
         }
         let ta = 0
@@ -115,7 +132,7 @@ fetch('./data.json')
 
         }
 
-        console.log(ha)
+
 
         info.innerHTML += `
  <div class="info_text">
@@ -146,7 +163,7 @@ fetch('./data.json')
                 
                 `
 
-                console.log("u " + u)
+
                 u++
 
             }
@@ -154,15 +171,13 @@ fetch('./data.json')
 
             small_episods.addEventListener("click", (a) => {
                 player_url = data.series[index].episodes[a.target.id].url
-                //     console.log(data.series[index].episodes[a.target.id].url)
-                //   console.log(a.target.id)
+
 
 
             })
             epi.addEventListener("click", (a) => {
                 player_url = data.series[index].episodes[a.target.id].url
-                //     console.log(data.series[index].episodes[a.target.id].url)
-                //   console.log(a.target.id)
+
 
 
             })
@@ -180,10 +195,10 @@ fetch('./data.json')
             player_url = data.series[index].url
 
             small_episods.addEventListener("click", (a) => {
-                console.log(data.series[index].url)
+
             })
             epi.addEventListener("click", (a) => {
-                console.log(data.series[index].url)
+
             })
 
 
@@ -211,15 +226,14 @@ fetch('./data.json')
             let ind = data.series.findIndex(a => a.id == ab.target.id)
             sessionStorage.setItem("video_index", ind)
             window.location.reload()
-            console.log()
+
 
         })
-        console.log(`playing ${data.series[index].title} with a url of ${player_url}`)
-        // console.log(video)
+
 
         setInterval(() => {
             if (video.src != player_url) {
-                console.log(`playing ${data.series[index].title} with a url of ${player_url}`)
+
                 video.src = player_url
 
             }

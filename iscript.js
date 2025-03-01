@@ -1,8 +1,10 @@
-let blur = document.getElementsByClassName('blur')[0]
+
 
 window.onload = () => {
+    let blur = document.getElementsByClassName('blur')[0]
+
     blur.style.display = 'none'
-    //     alert('loaded')
+
 }
 let menu = document.getElementsByClassName('men')[0]
 function move() {
@@ -35,7 +37,7 @@ fetch('./data.json')
         function hash() {
 
             time++
-            console.log(time)
+
             if (time > 100) {
                 alert('ERROR HASH() function crash ')
                 return
@@ -58,12 +60,12 @@ fetch('./data.json')
                 if (ha.length >= 1) {
                     if (ha.indexOf(final) === -1) {
                         ha.push(final)
-                        console.log('a')
+
 
                     }
                     else {
 
-                        console.log("womp womp")
+
                         hash()
                     }
 
@@ -80,7 +82,7 @@ fetch('./data.json')
 
         }
 
-        console.log(ha)
+   //     console.log(ha)
 
 
 
@@ -97,7 +99,6 @@ fetch('./data.json')
             j++
 
 
-            console.log(data)
 
         }
         let ta = 0
@@ -152,11 +153,11 @@ fetch('./data.json')
         }
         let clicked
         let bi = content.querySelectorAll(".video").forEach((a) => {
-            console.log(data.series.length)
+
             a.addEventListener("click", (b) => {
 
                 clicked = data.series.findIndex(an => an.id === b.target.id.trim())
-                console.log(`user clicked on movie named ${data.series[clicked].title}  with a id of ${data.series[clicked].id} `)
+
                 sessionStorage.setItem('video_index', clicked)
                 sessionStorage.setItem('video_id', data.series[clicked].id)
                 window.location.href = "player.html"
@@ -173,7 +174,7 @@ fetch('./data.json')
 
         function Upload_spotlight(Anime_name, intro, url, number_of_times) {
             slider.style.width = number_of_times * 100 + 100 + "vw"
-            //   console.log(slider)
+
             let spotlight = document.createElement('div')
 
             spotlight.id = number_of_times
@@ -204,11 +205,11 @@ fetch('./data.json')
 
             slider.appendChild(spotlight)
 
-            //  console.log(number_of_times)
+
             times = number_of_times
 
         }
-        // Upload_spotlight("That Time i Got Reincarnated as a slime", "That Time I Got Reincarnated as a Slime, also known as Regarding Reincarnated to Slime and by the contraction TenSura, is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah", 'that-time-i-got-reincarnated-as-a-slime-pictures-7ksbwoa7inx5qkvr.jpg', 1)
+
         //Upload_spotlight('Anime Name','Intro','Background url',number of anime)
         Upload_spotlight("Silent Voice", "After bullying Shoko, a girl with hearing impairment, Shoya is consumed with guilt. Soon, several incidents at the school make things worse and he sets out to make amends", 'Poster/horizontal/a-silent-voice-characters-poster-a6q9kq6tb8oalsbn.jpg', 1)
         Upload_spotlight("Devil man crybaby", "Akira's best friend tells him that ancient demons have returned to take back the world from humans and suggests that he unite with a demon. Akira successfully does that, transforming into Devilman, a being with a demon's powers but who retains the soul of a human.", "Poster/horizontal/devilman-crybaby-netflix-poster-ezjviaaj8gef6bq6.jpg", 2)
@@ -221,9 +222,9 @@ fetch('./data.json')
 
 
         let z = 1
-        //console.log(times + "times")
+
         function forward() {
-            console.log("'forward")
+
             if (z != times) {
                 z++
                 a.href = `#${z}`
@@ -247,7 +248,7 @@ fetch('./data.json')
 
         }
         function backward() {
-            // console.log(i)
+
             if (z > 1) {
                 z--
                 a.href = `#${z}`

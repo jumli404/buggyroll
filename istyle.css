@@ -1,14 +1,17 @@
 body {
     background-color: #11101a;
+    font-family: 'Playfair Display', serif;
 
 }
 
 .blur {
     position: absolute;
-    border: 1px solid none;
+
     width: 100vw;
-    height: 100vh;
-    z-index: 20;
+    min-height: 100%;
+
+    height: auto;
+    z-index: 200;
     background-color: #11101a;
     display: flex;
     justify-content: center;
@@ -27,8 +30,9 @@ body {
 
 .men {
     position: relative;
+    border: 1px solid red transparent;
 
-    margin-top: -56px;
+    margin-top: -62px;
     left: -300px;
 
     width: 300px;
@@ -159,6 +163,7 @@ button {
 .video p {
 
     position: absolute;
+    font-size: 14px;
     margin-bottom: -30px;
 
 }
