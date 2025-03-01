@@ -1,0 +1,892 @@
+<!--Get Ready for a curse code get a headace pill  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiAnime</title>
+    <link rel="shortcut icon"
+        href="https://lh6.googleusercontent.com/proxy/q2Sw17EDVpOl0YldME47pB0MQwZjSOKvy162aRafW3QMoRa14iAzQjknXa-ghTmd-DAe9GKv2Y9YJE4JmQ"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="blur">
+
+        <div class="load">
+
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <nav>
+            <button id="menu" onclick="move()"></button>
+            <div class="icon_g">
+                <img src="https://media.tenor.com/N5fU8iyU9F4AAAAj/shigure-ui-dance.gif" alt="" height="100%"
+                    width="100%" a>
+            </div>
+            <div class="men" id="JDlegendary">
+                <button class="m" id="close" onclick="move2()">Close Menu</button>
+                <button class="m" id="Explore">Explore</button>
+                <button class="m" id="Home">Home</button>
+                <button class="m" id="Contact">Contact</button>
+
+
+            </div>
+
+        </nav>
+        <div class="move" style="display: none;">
+            <!-- Got a error so i removed it it's not like it   was of use gona fix it in near future  -->
+            <button class="btn" onclick="backward()"></button>
+            <button class="btn" onclick="forward()"></button>
+        </div>
+        <div class="slide">
+            <div class="slider">
+
+
+            </div>
+
+        </div>
+        <div class="content">
+
+
+
+        </div>
+    </div>
+
+    <style id="lmao">
+        body {
+            background-color: #11101a;
+
+        }
+
+        .blur {
+            position: absolute;
+            border: 1px solid none;
+            width: 100vw;
+            height: 100vh;
+            z-index: 20;
+            background-color: #11101a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .load {
+
+            width: 150px;
+            height: 150px;
+            background-image: url(https://i.pinimg.com/originals/8f/c3/21/8fc32146cbf72ae17430e05ecc8b61be.gif);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .men {
+            position: relative;
+
+            margin-top: -56px;
+            left: -300px;
+
+            width: 300px;
+            height: 100vh;
+            background-color: #201f31d5;
+            backdrop-filter: blur(3px);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+
+        .men button {
+            border: none;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: large;
+            height: 50px;
+            background-color: transparent;
+        }
+
+        .men button:first-child {
+            margin-top: 50px;
+            background-image: url(src/back.png);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 80px;
+        }
+
+        .men button:hover {
+            background-color: #444444;
+            cursor: pointer;
+        }
+
+        #Explore {
+            margin-top: 150px;
+        }
+
+        @keyframes close {
+            0% {
+                position: relative;
+                left: 0;
+
+            }
+
+            100% {
+                position: relative;
+                left: -300px;
+
+            }
+
+        }
+
+        @keyframes open {
+            0% {
+                position: relative;
+                left: -300px;
+            }
+
+            100% {
+                position: relative;
+                left: 0px;
+
+            }
+
+        }
+
+
+        .icon_g {
+            margin-top: -50px;
+
+            margin-left: 80px;
+            width: 75px;
+
+
+            height: 60px;
+        }
+
+        .content {
+
+            padding: 30px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #11101a;
+
+            gap: 20px;
+            padding-top: 10px;
+
+        }
+
+        button {
+            z-index: 10;
+        }
+
+        .video img {
+
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .video {
+            margin-top: 40px;
+
+            height: 200px;
+            width: 155px;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: end;
+            z-index: 3;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+
+        }
+
+        .video p {
+
+            position: absolute;
+            margin-bottom: -30px;
+
+        }
+
+        #menu {
+            border: none;
+            margin-top: 14px;
+            margin-left: 14px;
+            background-image: url(src/menu.png);
+            height: 35px;
+            width: 35px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        nav {
+            margin-top: -1px;
+            position: fixed;
+            width: 100vw;
+
+            height: 60px;
+            z-index: 10;
+            background-color: #201f31c7;
+        }
+
+        .container {
+            height: auto;
+
+
+            background-color: #11101a;
+
+        }
+
+        .slide {
+
+
+
+            overflow: hidden;
+            width: 99vw;
+
+            scroll-behavior: smooth;
+        }
+
+        .slider {
+
+
+
+
+            display: flex;
+
+        }
+
+        .img {
+
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: url(that-time-i-got-reincarnated-as-a-slime-pictures-7ksbwoa7inx5qkvr.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .cover {
+            position: relative;
+
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            height: 550px;
+
+            background-color: #2d2b442f;
+
+
+
+
+        }
+
+        .move {
+            position: absolute;
+            display: flex;
+            height: 520px;
+
+            display: flex;
+            justify-content: end;
+            left: 95%;
+            flex-direction: column;
+
+        }
+
+        .btn {
+            width: 50px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            background-image: url(back.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #504e4e;
+            cursor: pointer;
+
+        }
+
+
+
+        .btn:last-child {
+
+            rotate: 180deg;
+            width: 50px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            background-image: url(back.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #504e4e;
+        }
+
+        .btn:hover {
+            background-color: #ff6b81;
+        }
+
+
+        .cover button {
+            border: none;
+
+            border-radius: 25px;
+            color: white;
+            height: 30px;
+            font-weight: bold;
+            width: 70px;
+
+        }
+
+        #watch {
+            cursor: pointer;
+            background-color: #ff6b81
+        }
+
+        #details {
+            cursor: pointer;
+            background-color: #444;
+        }
+
+        .cover_text {
+            padding-top: 190px;
+            padding-left: 30px;
+            margin-right: 5px;
+            padding-bottom: 80px;
+            position: relative;
+
+            flex-shrink: inherit;
+
+
+            width: 1000px;
+
+
+
+
+        }
+
+        .video:hover {
+            cursor: pointer;
+        }
+
+        @media (width <=1322px) {
+            .move {
+                height: 450px;
+                left: 94%;
+            }
+
+            .cover {
+                height: 450px;
+            }
+
+            .cover_text {
+                padding-top: 150px;
+                padding-left: 50px;
+                padding-bottom: 80px;
+                position: relative;
+
+                flex-shrink: inherit;
+                width: 500px;
+                z-index: 3;
+                font-size: 10px;
+
+
+
+            }
+
+            .video {
+                margin-top: 40px;
+
+                height: 200px;
+                width: 150px;
+                display: flex;
+                flex-shrink: 0;
+                justify-content: center;
+                align-items: end;
+
+
+            }
+
+            .video p {
+
+                position: absolute;
+                margin-bottom: -30px;
+
+            }
+
+
+
+
+
+
+        }
+
+        @media (width <900px) {
+            .move {
+                position: absolute;
+                left: 91%;
+                height: 300px;
+            }
+
+            .cover {
+                height: 300px;
+
+
+            }
+
+            .cover_text {
+                padding-top: 75px;
+                padding-left: 20px;
+                padding-bottom: 80px;
+                position: relative;
+
+                flex-shrink: inherit;
+                width: 500px;
+                font-size: 10px;
+                font-size: 8.5px;
+
+
+
+            }
+
+            .icon_g {
+
+                margin-left: 50px;
+            }
+        }
+
+        @media(width <=600px) {
+
+            .video {
+                width: 150px;
+                height: 200px;
+            }
+
+            .video p {
+
+                position: absolute;
+                margin-bottom: -30px;
+
+            }
+
+            .move {
+                height: 235px;
+                left: 86%;
+                z-index: 2;
+            }
+
+            .fill {
+                position: absolute;
+
+                width: 100vw;
+                background-color: #4e4e6d75;
+                z-index: 1;
+                height: 260px;
+                background-image: transparent;
+            }
+
+            .img {
+                position: absolute;
+                height: 100%;
+
+                background-image: url(that-time-i-got-reincarnated-as-a-slime-pictures-7ksbwoa7inx5qkvr.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 0;
+
+            }
+
+            .cover {
+                position: relative;
+                height: 250px;
+                display: flex;
+
+
+            }
+
+            .cover_text {
+                position: relative;
+                padding-top: 115px;
+                padding-left: 20px;
+                padding-bottom: 80px;
+
+                width: 500px;
+                height: 250px;
+                font-size: 10px;
+                font-size: 8.5px;
+                z-index: 2;
+
+
+
+            }
+        }
+
+
+        @media(width <=400px) {
+            .men {
+                width: 200px;
+            }
+
+            .content {
+                gap: 10px;
+            }
+
+            .video {
+                width: 140px;
+                height: 180px;
+            }
+
+            .move {
+                left: 80%;
+                height: 230px;
+                z-index: 5;
+            }
+
+            .men button:first-child {
+                background-position: 35px;
+            }
+
+            .cover_text h1 {
+                font-size: 13px;
+                padding-top: 65px;
+            }
+
+            .cover_text h2 {
+                display: none;
+            }
+        }
+
+        @media(width <=350px) {
+            .content {
+
+                gap: 30px;
+            }
+
+            .video {
+                width: 100px;
+                height: 130px;
+            }
+
+            .move {
+                left: 80%;
+                height: 230px;
+                z-index: 5;
+            }
+
+            .cover_text h1 {
+                font-size: 13px;
+                padding-top: 65px;
+            }
+
+            .cover_text h2 {
+                display: none;
+            }
+        }
+    </style>
+</body>
+<script>
+    let blur = document.getElementsByClassName('blur')[0]
+
+    window.onload = () => {
+        blur.style.display = 'none'
+        //     alert('loaded')
+    }
+    let menu = document.getElementsByClassName('men')[0]
+    function move() {
+        menu.style.animation = 'open forwards 2s ease'
+
+
+    }
+    function move2(params) {
+        menu.style.animation = 'close forwards 2s ease'
+
+    }
+
+
+
+
+    let nav = document.getElementsByTagName("nav")[0]
+    let content = document.getElementsByClassName('content')[0]
+    let aa = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "z", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    let sy = ["!", "@", "#", "$", "%", "^", "&", "*"]
+    let ha = []
+    let time = 0
+    fetch('./data.json')
+        .then(a => a.json())
+        .then(data => {
+            // Are u wondering how did i created undefined ? "if it are't crashing don't touch it ^_^"
+            function hash() {
+
+                time++
+                console.log(time)
+                if (time > 100) {
+                    alert('ERROR HASH() function crash ')
+                    return
+
+                }
+                else {
+
+                    let a = Math.floor(Math.random() * (0 + aa.length) + 1)
+                    let b = Math.floor(Math.random() * (0 + n.length) + 1)
+                    let c = Math.floor(Math.random() * (0 + sy.length) + 1)
+                    let d = Math.floor(Math.random() * (0 + aa.length) + 1)
+                    let e = Math.floor(Math.random() * (0 + n.length) + 1)
+                    let f = Math.floor(Math.random() * (0 + sy.length) + 1)
+
+
+                    let final = aa[a] + aa[d] + n[b] + n[e] + sy[c] + sy[f]
+                    let i = 0
+
+
+                    if (ha.length >= 1) {
+                        if (ha.indexOf(final) === -1) {
+                            ha.push(final)
+                            console.log('a')
+
+                        }
+                        else {
+
+                            console.log("womp womp")
+                            hash()
+                        }
+
+                    }
+                    if (ha.length === 0) {
+                        ha.push(final)
+
+                    }
+
+
+
+
+                }
+
+            }
+
+            console.log(ha)
+
+
+
+
+
+
+            let j = 0
+            while (j < data.series.length) {
+                hash()
+
+
+
+
+                j++
+
+
+                console.log(data)
+
+            }
+            let ta = 0
+
+            while (ta < data.series.length) {
+
+
+                data.series[ta].id = ha[ta]
+                ta++
+
+            }
+
+
+
+
+
+
+            document.addEventListener("scroll", (a) => {
+                if (scrollY > 1) {
+                    nav.style.backgroundColor = "#201f31b2"
+
+                }
+                else {
+                    nav.style.backgroundColor = " transparent"
+                }
+
+
+
+            })
+
+            let a = document.createElement('a')
+            document.body.appendChild(a)
+            let slider = document.getElementsByClassName('slider')[0]
+            let times = 0
+
+
+            function upload(name, url, id) {
+                content.innerHTML += `
+<div   class="video" style="background-image:url(${url}) ;" id="${id} ">
+
+    <p id="name">${name}
+    </p>
+
+</div>
+`
+
+            }
+            for (let i = 0; i <= ha.length - 1; i++) {
+
+                upload(data.series[i].title, data.series[i].p_url, ha[i])
+
+            }
+            let clicked
+            let bi = content.querySelectorAll(".video").forEach((a) => {
+                console.log(data.series.length)
+                a.addEventListener("click", (b) => {
+
+                    clicked = data.series.findIndex(an => an.id === b.target.id.trim())
+                    console.log(`user clicked on movie named ${data.series[clicked].title}  with a id of ${data.series[clicked].id} `)
+                    sessionStorage.setItem('video_index', clicked)
+                    sessionStorage.setItem('video_id', data.series[clicked].id)
+                    window.location.href = "player.html"
+
+
+
+
+
+
+                })
+
+            })
+
+
+            function Upload_spotlight(Anime_name, intro, url, number_of_times) {
+                slider.style.width = number_of_times * 100 + 100 + "vw"
+                //   console.log(slider)
+                let spotlight = document.createElement('div')
+
+                spotlight.id = number_of_times
+                spotlight.classList.add('cover')
+                if (intro === "") {
+                    intro = "ERROR `This dumbass forgot to input intro`"
+
+                }
+                if (Anime_name === "") {
+                    Anime_name = "ERROR `This dumbass forgot to input Name`"
+
+                }
+                spotlight.innerHTML = `
+
+        <div class="cover_text">
+            
+            <h1>${Anime_name}</h1>
+            <h2>${intro}</h2>
+            <button id="watch">Watch</button>
+            <button id="details">Details</button>
+            
+        </div>
+        <div class="fill"> </div>
+        <div class="img" style="background-image: url(${url});"></div>
+     
+
+`
+
+                slider.appendChild(spotlight)
+
+                //  console.log(number_of_times)
+                times = number_of_times
+
+            }
+            // Upload_spotlight("That Time i Got Reincarnated as a slime", "That Time I Got Reincarnated as a Slime, also known as Regarding Reincarnated to Slime and by the contraction TenSura, is a Japanese fantasy light novel series written by Fuse, and illustrated by Mitz Vah", 'that-time-i-got-reincarnated-as-a-slime-pictures-7ksbwoa7inx5qkvr.jpg', 1)
+            //Upload_spotlight('Anime Name','Intro','Background url',number of anime)
+            Upload_spotlight("Silent Voice", "After bullying Shoko, a girl with hearing impairment, Shoya is consumed with guilt. Soon, several incidents at the school make things worse and he sets out to make amends", 'Poster/horizontal/a-silent-voice-characters-poster-a6q9kq6tb8oalsbn.jpg', 1)
+            Upload_spotlight("Devil man crybaby", "Akira's best friend tells him that ancient demons have returned to take back the world from humans and suggests that he unite with a demon. Akira successfully does that, transforming into Devilman, a being with a demon's powers but who retains the soul of a human.", "Poster/horizontal/devilman-crybaby-netflix-poster-ezjviaaj8gef6bq6.jpg", 2)
+            Upload_spotlight('Your Name', 'Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person', 'Poster/horizontal/your-name.jpg', 3)
+            Upload_spotlight("Skeleton Knight", "A gamer falls asleep-only to wake up in the world of the game he was playing; Arc has the powerful skills and weapons of his character, but there's just one problem, he's stuck looking like that character.", 'Poster/horizontal/skeleton-knight.jpg', 4)
+            Upload_spotlight("I'm quitting Heroing", 'A war hero is banished by his own people, who fear his abilities and power. He then decides to join his enemies and help rebuild their army.', 'Poster/horizontal/im-quitting-heroing-feature-image.avif', 5)
+            Upload_spotlight("I'm the Villainess, So I'm Taming the Final Boss", "I'm the Villainess, So I'm Taming the Final Boss is a Japanese light novel series written by Sarasa Nagase and illustrated by Mai Murasaki. It began serialization online in May 2017 on the user-generated novel publishing website Shōsetsuka ni Narō", 'Poster/horizontal/im-the-villainess-so-im-taming-the-final-boss.jpeg', 6)
+            Upload_spotlight("Log Horizon", 'Log Horizon (Japanese: ログ・ホライズン, Hepburn: Rogu Horaizun) is a Japanese light novel series written by Mamare Touno and illustrated by Kazuhiro Hara. It began serialization online in 2010 on the user-generated novel publishing website Shōsetsuka ni Narō', 'Poster/horizontal/Log_horizon.png', 7)
+
+
+
+            let z = 1
+            //console.log(times + "times")
+            function forward() {
+                console.log("'forward")
+                if (z != times) {
+                    z++
+                    a.href = `#${z}`
+                    a.click()
+                    a.remove()
+
+                }
+                else {
+                    i = z
+                    a.href = `#${z}`
+                    a.click()
+                    a.remove()
+                }
+
+
+
+
+
+
+
+
+            }
+            function backward() {
+                // console.log(i)
+                if (z > 1) {
+                    z--
+                    a.href = `#${z}`
+                    a.click()
+                    a.remove()
+
+
+                }
+                else {
+                    z = times
+                    a.href = `#${z}`
+                    a.click()
+                    a.remove()
+                }
+
+
+
+
+            }
+            setInterval(() => {
+
+                forward()
+
+            }, 10000);
+
+
+        })
+
+
+</script>
+
+
+
+</html>

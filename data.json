@@ -1,0 +1,158 @@
+{
+    "movies": [
+        {
+            "id": "",
+            "info": "After bullying Shoko, a girl with hearing impairment, Shoya is consumed with guilt. Soon, several incidents at the school make things worse and he sets out to make amends",
+            "title": "Silent_voice",
+            "ep": false,
+            "p_url": "Poster/vertical/silent_voice.jpg",
+            "url": "https://drive.google.com/file/d/19arSUTpo9YAh1f1arLtnZCC2KiPzS_7Z/preview"
+        }
+    ],
+    "series": [
+        {
+            "id": "",
+            "info": "Akira's best friend tells him that ancient demons have returned to take back the world from humans and suggests that he unite with a demon. Akira successfully does that, transforming into Devilman, a being with a demon's powers but who retains the soul of a human",
+            "title": "Devilman crybaby",
+            "p_url": "Poster/vertical/devilman.jpeg",
+            "ep": true,
+            "episodes": [
+                {
+                    "e_id": "0",
+                    "episode": 1,
+                    "url": "https://drive.google.com/file/d/1TL5XpDIXV4hD_DZypv1a_vmqGA0zSD14/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 2,
+                    "url": "https://drive.google.com/file/d/1cZHVqBIWocbhYqBkWnFlNSd1A3SrwM8r/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 3,
+                    "url": "https://drive.google.com/file/d/1Y2nHgCgxhdLrNR7gG5Jewv860wP82T5B/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 4,
+                    "url": "https://drive.google.com/file/d/1SbRZLSQxCW_ATYcK4sGyC0q17ho21qNV/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 5,
+                    "url": "https://drive.google.com/file/d/19z3w4vo5uGJLDyFwC-Z5-FLy9dE2bU71/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 6,
+                    "url": "https://drive.google.com/file/d/1H8C7c7EUEhOmsOaEFGLqE809iufC90Rs/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 7,
+                    "url": "https://drive.google.com/file/d/1457-z9iWvydr-IeTL88P4lKP6Vdv98no/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 8,
+                    "url": "https://drive.google.com/file/d/1ufqhD8EJ3xnAy2ivT13jNHX6uPk0hz5H/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 9,
+                    "url": "https://drive.google.com/file/d/1ij9eeyHJyZLGua4DsWjlvfSO3koASB5p/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 10,
+                    "url": "https://drive.google.com/file/d/1kotLl81vjOaH5QtqhIz3JsjvDmaZxuFv/preview"
+                }
+            ]
+        },
+        {
+            "id": "",
+            "info": "A war hero is banished by his own people, who fear his abilities and power. He then decides to join his enemies and help rebuild their army.",
+            "p_url": "Poster/vertical/im-quitting-heroing.jpg",
+            "title": "i'm quitting heroing ",
+            "ep": true,
+            "episodes": [
+                {
+                    "e_id": "0",
+                    "episode": 1,
+                    "url": "https://drive.google.com/file/d/1u14lerFqxEMvSgWpFbCem0I2hBPszU6h/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 2,
+                    "url": "https://drive.google.com/file/d/1NKoSzCNsJ0ydFVr-4PALc4HuA5aX22La/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 3,
+                    "url": "https://drive.google.com/file/d/1GIEOT-Nxv5hlyQGIfusx2Szpko7K2xus/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 4,
+                    "url": "https://drive.google.com/file/d/1h4JBvVcVBWAYNjmCeUywpj1aGcOtp3Zk/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 5,
+                    "url": "https://drive.google.com/file/d/1uMobE0E920QiaRJiPUOty0ynhpwjTxqv/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 6,
+                    "url": "https://drive.google.com/file/d/12zdCK2l8zYo8xzQNcyupWZELKFd-hLKs/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 7,
+                    "url": "https://drive.google.com/file/d/1S1Sg9cZKZrMspcXgrjLzgH1cqKqqqQR9/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 8,
+                    "url": "https://drive.google.com/file/d/1s0zvsdCEmWayvRH22tHzc-NeLsEU9aVW/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 9,
+                    "url": "https://drive.google.com/file/d/1dweg5axTQFwZ0ITJNZQ5lZWCTVJUSilo/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 10,
+                    "url": "https://drive.google.com/file/d/1gGl7Kibz-Nh08Yzl6ivEzKGRSguTg2dK/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 11,
+                    "url": "https://drive.google.com/file/d/1bxSNlN_c0bMlaKe9ifEBz7DNsCILMD-y/preview"
+                },
+                {
+                    "e_id": "",
+                    "episode": 12,
+                    "url": "https://drive.google.com/file/d/1gV7417kEgZrp_BwmZ2KeWhhvvlX7ONn2/preview"
+                }
+            ]
+        },
+        {
+            "ep": false,
+            "id": "",
+            "info": "After bullying Shoko, a girl with hearing impairment, Shoya is consumed with guilt. Soon, several incidents at the school make things worse and he sets out to make amends",
+            "title": "Silent voice",
+            "p_url": "Poster/vertical/silent_voice.jpg",
+            "url": "https://drive.google.com/file/d/19arSUTpo9YAh1f1arLtnZCC2KiPzS_7Z/preview"
+        },
+        {
+            "ep": false,
+            "id": "",
+            "info": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+            "title": "spiderman no way home",
+            "p_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnqTOE2DukkW6RE2bGcrMfstVaYeXlZDumNiG78jWjilLx0QrBSnHSvICORT6TnOsyGc",
+            "url": "https://drive.google.com/file/d/10ffsvXR5T6la9CTb8sIpZFwoGXTfxmhU/preview"
+        }
+    ]
+}

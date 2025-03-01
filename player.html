@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiAnime</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav></nav>
+        <div class="video">
+            <div class="episods">
+
+            </div>
+
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
+            <div class="info">
+
+
+            </div>
+
+        </div>
+        <!--Don't ask me why i named this class small_Dick and why the fuck i created two different class which do the same stuff i'm just dumb-->
+        <div class="small_dick">
+            <div class="small_episods">
+
+
+            </div>
+            <div class="small_info">
+
+
+            </div>
+
+
+
+        </div>
+        <div class="content_vi">
+
+        </div>
+
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #11101a;
+
+
+        }
+
+        .content_vi {
+
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            border: none;
+            background-color: #11101a;
+
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            padding-top: 0px;
+
+        }
+
+        .video_v {
+            margin-top: 50px;
+
+            width: 155px;
+            height: 200px;
+            margin-left: 20px;
+            text-align: center;
+            background-image: url(Poster/vertical/devilman.jpeg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .video_v p {
+            margin-top: 210px;
+        }
+
+        .small_dick {
+            display: none;
+        }
+
+        .small_episods {
+            display: none;
+        }
+
+        .pic {
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid cyan transparent;
+            width: 150px;
+            height: 200px;
+            background-image: url(Poster/vertical/silent_voice.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .info_text {
+
+            height: 100%;
+            overflow: hidden;
+
+            text-align: justify;
+            border: 1px solid rgb(0, 0, 0) transparent;
+            word-wrap: break-word;
+
+            max-width: 400px;
+            text-overflow: ellipsis;
+        }
+
+
+
+        .info_text h1 {
+
+            position: relative;
+            margin-left: 32%;
+
+
+        }
+
+
+
+        .episods button {
+            width: 100%;
+            height: 40px;
+            background-color: #4d5059;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+
+
+        .video {
+            padding: 40px;
+            padding-left: 50px;
+            padding-right: 10px;
+            border: 1px solid red transparent;
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: 550px;
+
+        }
+
+        .episods {
+            position: relative;
+            border: 1px solid rgb(0, 0, 0);
+            height: 100%;
+            min-width: 400px;
+            overflow-y: scroll;
+        }
+
+        .episods::-webkit-scrollbar {
+            width: 5px;
+            border: 1px solid red transparent;
+
+            border-radius: 10px;
+            background-color: rgb(20, 18, 18);
+        }
+
+
+
+
+        #video-player {
+            border: 1px solid blue transparent;
+            height: 100%;
+            width: 100%;
+
+
+
+
+        }
+
+        .info {
+            border: 1px solid rgb(60, 255, 0) transparent;
+            height: 96%;
+            padding: 10px;
+            background-color: #11101a;
+
+            min-width: 340px;
+        }
+
+        nav {
+            margin-top: -1px;
+
+            width: 99vw;
+            border: 1px solid red transparent;
+            height: 60px;
+            background-color: #201f31;
+        }
+
+        .container {
+            height: 100vh;
+            border: 1px solid red transparent;
+            background-color: #191826;
+
+
+        }
+
+        @media (width <1600px) {
+            .episods {
+                min-width: 350px;
+
+            }
+
+            .info {
+                min-width: 350px;
+            }
+
+            .video {
+
+                height: 450px;
+            }
+
+        }
+
+        @media (width <1400px) {
+            .info {
+
+                min-width: 300px;
+
+            }
+
+            .episods {
+                min-width: 300px;
+            }
+
+        }
+
+        @media (width <1200px) {
+            .video {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+            }
+
+            .small_dick {
+                display: block;
+                margin-top: -35px;
+                height: fit-content;
+
+
+            }
+
+            .small_info {
+
+                width: 100%;
+                height: 100%;
+                background-color: #11101a;
+
+                display: flex;
+            }
+
+            .small_dick h1 {
+
+                position: relative;
+
+                display: block;
+                width: 100%;
+                height: 40px;
+
+                margin-top: 10px;
+
+            }
+
+            .small_dick p {
+
+                position: absolute;
+                margin-left: 215px;
+                width: 70%;
+                height: max-content;
+                margin-top: 55px;
+
+
+            }
+
+            .info {
+                display: none;
+
+
+            }
+
+            .small_pic {
+                margin: 20px;
+
+                background-image: url(overlord_vertical.jpg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 170px;
+                width: 220px;
+
+
+            }
+
+            .pic {
+                margin-top: -30px;
+                margin-left: -170px;
+                position: absolute;
+
+            }
+
+            .info_text {
+                padding: 10px;
+
+                margin-left: 10px;
+
+                word-wrap: normal;
+                max-width: 90%;
+            }
+        }
+
+        @media (width <=939px) {
+            .small_episods {
+                padding: 10px;
+                display: block;
+                border: 1px solid cyan transparent;
+                height: auto;
+                background-color: #2b2a42;
+                overflow: scroll;
+            }
+
+            nav {
+                height: 50px;
+            }
+
+            .small_episods button {
+                width: 100%;
+                height: 40px;
+                background-color: #4d5059;
+                border: none;
+                cursor: pointer;
+            }
+
+
+
+
+            .info {
+                display: none;
+            }
+
+            .episods {
+                display: none;
+
+            }
+
+            .video {
+                padding-left: 0;
+
+                height: 400px;
+            }
+
+        }
+
+        @media (width <750px) {
+            .small_pic {
+                width: 110px;
+                height: 140px
+            }
+
+            .small_dick h1 {
+
+                position: relative;
+                border: 1px solid red transparent;
+                display: block;
+                width: 100%;
+                height: 40px;
+                font-size: 25px;
+                margin-left: 5px;
+
+                margin-top: 15px;
+
+            }
+
+
+            .small_dick p {
+
+                position: absolute;
+                margin-left: 125px;
+                width: 70%;
+                font-size: 15px;
+                height: max-content;
+                margin-top: 55px;
+                border: 1px solid red transparent;
+
+            }
+
+            .video_v {
+                width: 140px;
+                height: 180px;
+            }
+
+            .video_v p {
+                margin-top: 190px;
+            }
+
+        }
+
+        @media (width <=601px) {
+            .episods {
+                margin-top: 1155px;
+                border: 1px solid red transparent;
+            }
+
+            .video {
+                height: 300px;
+            }
+
+
+        }
+
+        @media (width <430px) {
+            .small_pic {
+                margin-left: 5px;
+                margin-top: 0px;
+                width: 100px;
+                height: 150px;
+            }
+
+            .video {
+                height: 200px;
+            }
+
+            .small_dick p {
+
+                position: absolute;
+                margin-left: 100px;
+                width: 70%;
+                font-size: 13px;
+                height: max-content;
+                margin-top: 40px;
+                border: 1px solid red transparent;
+
+            }
+
+            .small_dick h1 {
+
+                position: relative;
+                border: 1px solid red transparent;
+                display: block;
+                width: 100%;
+                height: 40px;
+                font-size: 20px;
+                margin-left: 5px;
+
+                margin-top: 15px;
+
+            }
+
+        }
+
+        @media (width<350px) {
+            .video_v {
+
+                width: 120px;
+                height: 140px;
+            }
+
+            .small_dick p {
+
+                position: absolute;
+                margin-left: 85px;
+                width: 70%;
+                font-size: 10px;
+                height: max-content;
+                margin-top: 50px;
+                border: 1px solid red transparent;
+
+            }
+
+            .small_dick h1 {
+                position: relative;
+                border: 1px solid red transparent;
+                display: block;
+                width: 100%;
+                height: 40px;
+                font-size: 15px;
+                margin-left: -10px;
+                margin-top: 25px;
+
+            }
+
+            .video_v {
+                width: 120px;
+                height: 145px;
+            }
+
+            .video_v p {
+                margin-top: 150px;
+                font-size: 12px;
+            }
+
+
+
+        }
+
+        @media (width <281px) {
+            .small_dick p {
+
+                position: absolute;
+                margin-left: 70px;
+                width: 70%;
+                font-size: 10px;
+                height: max-content;
+                margin-top: 40px;
+                border: 1px solid red transparent;
+
+            }
+
+        }
+    </style>
+    <script>
+        let aa = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "z", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+        let sy = ["!", "@", "#", "$", "%", "^", "&", "*"]
+        let player_url;
+        let ha = []
+        let h = []
+        let video = document.getElementsByTagName("iframe")[0]
+        let time;
+        let index = sessionStorage.getItem("video_index")
+        console.log('index: ' + index)
+        let info = document.getElementsByClassName('info')[0]
+        let small_info = document.getElementsByClassName('small_info')[0]
+        let content_vi = document.getElementsByClassName('content_vi')[0]
+        let epi = document.getElementsByClassName("episods")[0]
+        let small_episods = document.getElementsByClassName("small_episods")[0]
+
+        // let a = sessionStorage.getItem("video_index")
+        fetch('./data.json')
+            .then(a => a.json())
+            .then(data => {
+                function hash(e) {
+
+                    time++
+                    console.log(time)
+                    if (time > 100) {
+                        alert('ERROR HASH() function crash ')
+                        return
+
+                    }
+                    else {
+
+                        let a = Math.floor(Math.random() * (0 + aa.length) + 1)
+                        let b = Math.floor(Math.random() * (0 + n.length) + 1)
+                        let c = Math.floor(Math.random() * (0 + sy.length) + 1)
+                        let d = Math.floor(Math.random() * (0 + aa.length) + 1)
+                        let e = Math.floor(Math.random() * (0 + n.length) + 1)
+                        let f = Math.floor(Math.random() * (0 + sy.length) + 1)
+
+
+                        let final = aa[a] + aa[d] + n[b] + n[e] + sy[c] + sy[f]
+                        let i = 0
+
+
+                        if (ha.length >= 1) {
+                            if (ha.indexOf(final) === -1) {
+                                ha.push(final)
+                                // console.log('a')
+
+                            }
+                            else {
+
+                                console.log("womp womp")
+                                hash()
+                            }
+
+                        }
+                        if (ha.length === 0) {
+                            console.log('id')
+                            ha.push(final)
+
+                        }
+
+
+
+
+
+
+
+                    }
+
+                }
+                let j = 0
+                while (j < data.series.length) {
+                    hash()
+
+
+
+
+                    j++
+
+
+                    console.log(data)
+
+                }
+                let ta = 0
+
+                while (ta < data.series.length) {
+
+
+
+                    data.series[ta].id = ha[ta]
+                    ta++
+
+                }
+
+                console.log(ha)
+
+                info.innerHTML += `
+         <div class="info_text">
+                    <div class="pic" style="background-image:url(${data.series[index].p_url});"></div>
+                    <h1 style="font-size: 20px;">${data.series[index].title}</h1>
+                    <p style="border: 1px solid yellow transparent; width: 100%;">
+                        ${data.series[index].info}
+                    </p>
+                </div>
+        `
+                small_info.innerHTML += `
+                       <div class="small_pic"  style="background-image:url(${data.series[index].p_url}"></div>
+                <h1>${data.series[index].title}</h1>
+                <p>${data.series[index].info}</p>`
+                let i = 0
+                let u = 0
+                if (data.series[index].ep === true) {
+                    while (data.series[index].episodes.length != u) {
+                        hash()
+                        data.series[index]
+
+                        small_episods.innerHTML += `
+                        <button id="${u}" style="background-color:#4d5059; color:white; margin-top:6px;">${u + 1}</button>
+                        
+                        `
+                        epi.innerHTML += `
+                        <button id="${u}" style="background-color:#4d5059; color:white; margin-top:6px;">${u + 1}</button>
+                        
+                        `
+
+                        console.log("u " + u)
+                        u++
+
+                    }
+                    player_url = data.series[index].episodes[0].url
+
+                    small_episods.addEventListener("click", (a) => {
+                        player_url = data.series[index].episodes[a.target.id].url
+                        //     console.log(data.series[index].episodes[a.target.id].url)
+                        //   console.log(a.target.id)
+
+
+                    })
+                    epi.addEventListener("click", (a) => {
+                        player_url = data.series[index].episodes[a.target.id].url
+                        //     console.log(data.series[index].episodes[a.target.id].url)
+                        //   console.log(a.target.id)
+
+
+                    })
+
+
+                }
+                else {
+                    small_episods.innerHTML += `
+                    <button id="0" style="background-color:#4d5059; color:white;  ;margin-top:6px;">Full</button>
+                    `
+                    epi.innerHTML += `
+                    <button style="background-color:#4d5059; color:white;  ;margin-top:6px;">Full</button>
+                    
+                    `
+                    player_url = data.series[index].url
+
+                    small_episods.addEventListener("click", (a) => {
+                        console.log(data.series[index].url)
+                    })
+                    epi.addEventListener("click", (a) => {
+                        console.log(data.series[index].url)
+                    })
+
+
+                }
+
+                data.series.forEach(element => {
+
+
+
+
+
+                    content_vi.innerHTML += `
+                     <div class="video_v" id="${ha[i]}"  style="background-image:url(${element.p_url})" >
+              
+                <p>${element.title}</p>
+                
+
+            </div> 
+                    `
+                    i++
+
+
+                });
+                content_vi.addEventListener("click", (ab) => {
+                    let ind = data.series.findIndex(a => a.id == ab.target.id)
+                    sessionStorage.setItem("video_index", ind)
+                    window.location.reload()
+                    console.log()
+
+                })
+                console.log(`playing ${data.series[index].title} with a url of ${player_url}`)
+                // console.log(video)
+
+                setInterval(() => {
+                    if (video.src != player_url) {
+                        console.log(`playing ${data.series[index].title} with a url of ${player_url}`)
+                        video.src = player_url
+
+                    }
+
+                }, 1000)
+            })
+
+    </script>
+
+</html>
