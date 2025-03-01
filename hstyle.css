@@ -1,0 +1,602 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #11101a;
+
+
+}
+
+.blur {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #11101a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load {
+
+    width: 150px;
+    height: 150px;
+    background-image: url(https://i.pinimg.com/originals/8f/c3/21/8fc32146cbf72ae17430e05ecc8b61be.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+.men {
+    position: relative;
+
+    margin-top: -56px;
+    left: -300px;
+    z-index: 5;
+
+    width: 300px;
+    height: 100vh;
+    background-color: #201f31d5;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.men button {
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: large;
+    height: 50px;
+    background-color: transparent;
+}
+
+.men button:first-child {
+    margin-top: 50px;
+    background-image: url(src/back.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 80px;
+}
+
+.men button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+#Explore {
+    margin-top: 150px;
+}
+
+@keyframes close {
+    0% {
+        position: relative;
+        left: 0;
+
+    }
+
+    100% {
+        position: relative;
+        left: -300px;
+
+    }
+
+}
+
+@keyframes open {
+    0% {
+        position: relative;
+        left: -300px;
+    }
+
+    100% {
+        position: relative;
+        left: 0px;
+
+    }
+
+}
+
+
+.icon_g {
+    margin-top: -50px;
+
+    margin-left: 80px;
+    width: 75px;
+
+
+    height: 60px;
+}
+
+.icon_g:hover {
+    cursor: pointer;
+}
+
+#menu {
+    border: none;
+    margin-top: 14px;
+    margin-left: 14px;
+    background-image: url(src/menu.png);
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.content_vi {
+
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    border: none;
+    background-color: #11101a;
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+
+}
+
+.video_v {
+    margin-top: 50px;
+
+    width: 155px;
+    height: 200px;
+    margin-left: 20px;
+    text-align: center;
+    background-image: url(Poster/vertical/devilman.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.video_v p {
+    margin-top: 210px;
+}
+
+.small_dick {
+    display: none;
+}
+
+.small_episods {
+    display: none;
+}
+
+.pic {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid cyan transparent;
+    width: 150px;
+    height: 200px;
+    background-image: url(Poster/vertical/silent_voice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.info_text {
+
+    height: 100%;
+    overflow: hidden;
+
+    text-align: justify;
+    border: 1px solid rgb(0, 0, 0) transparent;
+    word-wrap: break-word;
+
+    max-width: 400px;
+    text-overflow: ellipsis;
+}
+
+
+
+.info_text h1 {
+
+    position: relative;
+    margin-left: 32%;
+
+
+}
+
+
+
+.episods button {
+    width: 100%;
+    height: 40px;
+    background-color: #4d5059;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.video {
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 10px;
+    border: 1px solid red transparent;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 550px;
+
+}
+
+.episods {
+    position: relative;
+
+    height: 100%;
+    min-width: 400px;
+    overflow-y: scroll;
+}
+
+.episods::-webkit-scrollbar {
+    width: 5px;
+    border: 1px solid red transparent;
+
+    border-radius: 10px;
+    background-color: rgb(20, 18, 18);
+}
+
+
+
+
+#video-player {
+    border: 1px solid blue transparent;
+    height: 100%;
+    width: 100%;
+
+
+
+
+}
+
+.info {
+    border: 1px solid rgb(60, 255, 0) transparent;
+    height: 96%;
+    padding: 10px;
+    background-color: #11101a;
+
+    min-width: 340px;
+}
+
+nav {
+    margin-top: -1px;
+
+    width: 99vw;
+    border: 1px solid red transparent;
+    height: 60px;
+    background-color: #201f31;
+}
+
+.container {
+    height: 100vh;
+    border: 1px solid red transparent;
+    background-color: #191826;
+
+
+}
+
+@media (width <1600px) {
+    .episods {
+        min-width: 350px;
+
+    }
+
+    .info {
+        min-width: 350px;
+    }
+
+    .video {
+
+        height: 450px;
+    }
+
+}
+
+@media (width <1400px) {
+    .info {
+
+        min-width: 300px;
+
+    }
+
+    .episods {
+        min-width: 300px;
+    }
+
+}
+
+@media (width <1200px) {
+    .video {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .small_dick {
+        display: block;
+        margin-top: -35px;
+        height: fit-content;
+
+
+    }
+
+    .small_info {
+
+        width: 100%;
+        height: 100%;
+        background-color: #11101a;
+
+        display: flex;
+    }
+
+    .small_dick h1 {
+
+        position: relative;
+
+        display: block;
+        width: 100%;
+        height: 40px;
+
+        margin-top: 10px;
+
+    }
+
+    .small_dick p {
+
+        position: absolute;
+        margin-left: 215px;
+        width: 70%;
+        height: max-content;
+        margin-top: 55px;
+
+
+    }
+
+    .info {
+        display: none;
+
+
+    }
+
+    .small_pic {
+        margin: 20px;
+
+        background-image: url(overlord_vertical.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 170px;
+        width: 220px;
+
+
+    }
+
+    .pic {
+        margin-top: -30px;
+        margin-left: -170px;
+        position: absolute;
+
+    }
+
+    .info_text {
+        padding: 10px;
+
+        margin-left: 10px;
+
+        word-wrap: normal;
+        max-width: 90%;
+    }
+}
+
+@media (width <=939px) {
+    .icon_g {
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+
+    .small_episods {
+        padding: 10px;
+        display: block;
+        border: 1px solid cyan transparent;
+        height: auto;
+        background-color: #2b2a42;
+        overflow: scroll;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    .small_episods button {
+        width: 100%;
+        height: 40px;
+        background-color: #4d5059;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+
+    .info {
+        display: none;
+    }
+
+    .episods {
+        display: none;
+
+    }
+
+    .video {
+        padding-left: 0;
+
+        height: 400px;
+    }
+
+}
+
+@media (width <750px) {
+    .small_pic {
+        width: 110px;
+        height: 140px
+    }
+
+    .small_dick h1 {
+
+        position: relative;
+        border: 1px solid red transparent;
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 25px;
+        margin-left: 5px;
+
+        margin-top: 15px;
+
+    }
+
+
+    .small_dick p {
+
+        position: absolute;
+        margin-left: 125px;
+        width: 70%;
+        font-size: 15px;
+        height: max-content;
+        margin-top: 55px;
+        border: 1px solid red transparent;
+
+    }
+
+    .video_v {
+        width: 140px;
+        height: 180px;
+    }
+
+    .video_v p {
+        margin-top: 190px;
+    }
+
+}
+
+@media (width <=601px) {
+    .episods {
+        margin-top: 1155px;
+        border: 1px solid red transparent;
+    }
+
+    .video {
+        height: 300px;
+    }
+
+
+}
+
+@media (width <430px) {
+    .small_pic {
+        margin-left: 5px;
+        margin-top: 0px;
+        width: 100px;
+        height: 150px;
+    }
+
+    .video {
+        height: 200px;
+    }
+
+    .small_dick p {
+
+        position: absolute;
+        margin-left: 100px;
+        width: 70%;
+        font-size: 13px;
+        height: max-content;
+        margin-top: 40px;
+        border: 1px solid red transparent;
+
+    }
+
+    .small_dick h1 {
+
+        position: relative;
+        border: 1px solid red transparent;
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        margin-left: 5px;
+
+        margin-top: 15px;
+
+    }
+
+}
+
+@media (width<350px) {
+    .video_v {
+
+        width: 120px;
+        height: 140px;
+    }
+
+    .small_dick p {
+
+        position: absolute;
+        margin-left: 85px;
+        width: 70%;
+        font-size: 10px;
+        height: max-content;
+        margin-top: 50px;
+        border: 1px solid red transparent;
+
+    }
+
+    .small_dick h1 {
+        position: relative;
+        border: 1px solid red transparent;
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+        margin-left: -10px;
+        margin-top: 25px;
+
+    }
+
+    .video_v {
+        width: 120px;
+        height: 145px;
+    }
+
+    .video_v p {
+        margin-top: 150px;
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media (width <281px) {
+    .small_dick p {
+
+        position: absolute;
+        margin-left: 70px;
+        width: 70%;
+        font-size: 10px;
+        height: max-content;
+        margin-top: 40px;
+        border: 1px solid red transparent;
+
+    }
+
+}
