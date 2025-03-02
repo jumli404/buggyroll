@@ -2,9 +2,9 @@
 let nav = document.getElementsByTagName("nav")[0]
 window.onload = () => {
     let blur = document.getElementsByClassName('blur')[0]
-    
+
     blur.style.display = 'none'
-   nav.style.display = 'block'
+    nav.style.display = 'block'
 
 
 
@@ -140,7 +140,7 @@ fetch('./data.json')
  <div class="info_text">
             <div class="pic" style="background-image:url(${data.series[index].p_url});"></div>
             <h1 style="font-size: 20px;">${data.series[index].title}</h1>
-            <p style="border: 1px solid yellow transparent; width: 100%;">
+            <p style="border: 1px solid yellow transparent; width: 100%;"> Watch ${data.series[index].title} on Buggyroll adfree <br>
                 ${data.series[index].info}
             </p>
         </div>
@@ -148,7 +148,8 @@ fetch('./data.json')
         small_info.innerHTML += `
                <div class="small_pic"  style="background-image:url(${data.series[index].p_url}"></div>
         <h1>${data.series[index].title}</h1>
-        <p>${data.series[index].info}</p>`
+        <p>Watch ${data.series[index].title} on Buggyroll adfree <br>
+                ${data.series[index].info}</p>`
         let i = 0
         let u = 0
         if (data.series[index].ep === true) {

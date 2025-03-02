@@ -5,6 +5,7 @@ window.onload = () => {
 
     blur.style.display = 'none'
 
+
 }
 let menu = document.getElementsByClassName('men')[0]
 function move() {
@@ -82,7 +83,7 @@ fetch('./data.json')
 
         }
 
-   //     console.log(ha)
+        //     console.log(ha)
 
 
 
@@ -173,6 +174,7 @@ fetch('./data.json')
 
 
         function Upload_spotlight(Anime_name, intro, url, number_of_times) {
+
             slider.style.width = number_of_times * 100 + 100 + "vw"
 
             let spotlight = document.createElement('div')
