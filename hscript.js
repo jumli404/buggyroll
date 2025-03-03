@@ -57,7 +57,7 @@ let epi = document.getElementsByClassName("episods")[0]
 let small_episods = document.getElementsByClassName("small_episods")[0]
 
 
-fetch('./data.json')
+fetch('https://api-production-2f49.up.railway.app/data')
     .then(a => a.json())
     .then(data => {
         function hash(e) {

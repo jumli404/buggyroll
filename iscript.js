@@ -31,7 +31,7 @@ let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 let sy = ["!", "@", "#", "$", "%", "^", "&", "*"]
 let ha = []
 let time = 0
-fetch('./data.json')
+fetch('https://api-production-2f49.up.railway.app/data')
     .then(a => a.json())
     .then(data => {
         // Are u wondering how did i created undefined ? "if it are't crashing don't touch it ^_^"
