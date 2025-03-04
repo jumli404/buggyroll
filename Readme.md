@@ -1,4 +1,4 @@
-#Buggyroll
+# Buggyroll
 <p>Hey if you are reading this you may be curious about my site? yes?</p>
 <p>HEY, i made a streming website using HTML CSS JS NODE.JS. You can watch free movies/Anime here i have limited content coz i use my google drive as my video hosting server </p>
 <p>I made a API to fetch and update users/movies data from data.json  i have't added users login in Frontend site of the website so soon i'll add  </p>
