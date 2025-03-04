@@ -1,6 +1,9 @@
-Buggyroll
+#Buggyroll
 <p>Hey if you are reading this you may be curious about my site? yes?</p>
-<p>I just made a streaming website i know it has limited content but hey what did you expect? I aren't using somekind of API or database i'm using my google drive as my server that's the reason i have limited content and in near future may be in 5 to ten days i'm gonna add some kind of API i can't use it now coz i don't have enough time</p>
-<p>I know my site's lack some security feature i'm gona make a API that can send my data.json to my site  </p>
+<p>HEY, i made a streming website using HTML CSS JS NODE.JS. You can watch free movies/Anime here i have limited content coz i use my google drive as my video hosting server </p>
+<p>I made a API to fetch and update users/movies data from data.json  i have't added users login in Frontend site of the website so soon i'll add  </p>
+<p>My fav. part of this site is it can automatically upload the content according to the length of my data.json so if i want to upload i can just update my data.json i know it's a long process and yeah i can use my API to send data like my usesr data and i know that i'm gona use that ASAP </p>
+<p>My site has some bugs in UI i'll that SOON </p>
+<p> =_=  </p>
 
 <img src="https://media.tenor.com/N5fU8iyU9F4AAAAj/shigure-ui-dance.gif"> </img>
